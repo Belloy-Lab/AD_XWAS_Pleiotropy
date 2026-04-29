@@ -1,4 +1,4 @@
-**An APOE*4-Informed Genomic Atlas of the X Chromosome in Alzheimer’s Disease**
+# An APOE*4-Informed Genomic Atlas of the X Chromosome in Alzheimer’s Disease
 
 ## Background
 To elucidate sex differences in Alzheimer’s disease (AD), we present the most comprehensive analysis to date of X chromosome genetic variation in Alzheimer’s disease (AD), integrating:
@@ -7,7 +7,7 @@ To elucidate sex differences in Alzheimer’s disease (AD), we present the most 
 - Modeling of escape from X-chromosome inactivation (eXCI)
 - Multi-trait pleiotropy with brain imaging, lipid, and hormone traits
 - Functional genomics (xQTL colocalization and differential expression)
-This work provides a resource of X-linked AD risk loci, candidate genes, and biological insights to guide future research.
+This repository provides codes related to each of these analyses.
 
 ---
 
