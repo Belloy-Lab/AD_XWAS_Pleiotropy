@@ -31,16 +31,6 @@ This work provides a resource of X-linked AD risk loci, candidate genes, and bio
 ### XWAS Analyses
 Meta-analyzed XWAS summary statistics will be made available upon publication in GWAS catalog and Zenodo. Individual-level genetic data used in the X-chromosome-wide association analyses are not publicly hosted in this repository due to controlled-access restrictions. Data are available upon application through the following repositories:
 
-- dbGaP: https://www.ncbi.nlm.nih.gov/gap/  
-- NIAGADS: https://www.niagads.org/  
-- LONI: https://ida.loni.usc.edu/  
-- AMP-AD Knowledge Portal (Synapse): https://www.synapse.org/  
-- Rush ADRC: https://www.radc.rush.edu/  
-- NACC: https://naccdata.org/  
-- UK Biobank: https://www.ukbiobank.ac.uk/  
-- FinnGen: https://www.finngen.fi/en  
-- Million Veteran Program (MVP): https://www.mvp.va.gov/
-
 | Datasource | Link                                          |
 |------------|-----------------------------------------------|
 | dbGaP      | https://www.ncbi.nlm.nih.gov/gap/             |
@@ -65,6 +55,14 @@ All external datasets used for pleiotropy analyses are publicly available:
   https://csg.sph.umich.edu/willer/public/glgc-lipids2021/results/chrx_summary_stats/  
 - Brain MRI XWAS (Jiang et al.):  
   https://zenodo.org/records/12676622
+
+| Trait      | Link                                          |
+|------------|-----------------------------------------------|
+| Age at menopause      | https://www.reprogen.org/data_download.html               |
+| Age at menarche    | https://www.repository.cam.ac.uk/items/8c5f7afb-5fa2-45ea-b52d-4e643bc2a5b7    |
+| Hormone exposure traits (UK Biobank)   | https://www.ukbiobank.ac.uk/                     |
+| Global Lipids Genetics Consortium (GLGC) | https://csg.sph.umich.edu/willer/public/glgc-lipids2021/results/chrx_summary_stats/  |
+| Brain MRI XWAS (Jiang et al.)  | https://zenodo.org/records/12676622                    |
 
 ---
 
