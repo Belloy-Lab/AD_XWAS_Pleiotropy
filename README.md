@@ -48,14 +48,6 @@ Meta-analyzed XWAS summary statistics will be made available upon publication in
 ### Multi-Trait Pleiotropy Analyses
 All external datasets used for pleiotropy analyses are publicly available:
 
-- Age at menopause: https://www.reprogen.org/data_download.html  
-- Age at menarche: https://www.repository.cam.ac.uk/items/8c5f7afb-5fa2-45ea-b52d-4e643bc2a5b7  
-- Hormone exposure traits (UK Biobank): https://www.ukbiobank.ac.uk/  
-- Global Lipids Genetics Consortium (GLGC):  
-  https://csg.sph.umich.edu/willer/public/glgc-lipids2021/results/chrx_summary_stats/  
-- Brain MRI XWAS (Jiang et al.):  
-  https://zenodo.org/records/12676622
-
 | Trait      | Link                                          |
 |------------|-----------------------------------------------|
 | Age at menopause      | https://www.reprogen.org/data_download.html               |
@@ -68,13 +60,12 @@ All external datasets used for pleiotropy analyses are publicly available:
 
 ### xQTL Colocalization Analyses
 Publicly available xQTL resources include:
-
-- Wingo et al. DLPFC pQTL/eQTL:  
-  https://www.synapse.org/Synapse:syn51150434/wiki/621280  
-- Fujita et al. single-cell brain eQTL data:  
-  https://www.synapse.org/Synapse:syn52335807  
-- eQTL Catalogue:  
-  https://www.ebi.ac.uk/eqtl/Data_access/
+ 
+| Datasource | Link                                          |
+|------------|-----------------------------------------------|
+| Wingo et al. DLPFC pQTL/eQTL                         | https://www.synapse.org/Synapse:syn51150434/wiki/621280 |
+| Fujita et al. single-cell brain eQTL data            | https://www.synapse.org/Synapse:syn52335807  |
+| eQTL Catalogue (GTEx v8, CommonMind, et.c eQTL/sQTL) | https://www.ebi.ac.uk/eqtl/Data_access/      |
 
 ---
 
