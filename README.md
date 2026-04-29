@@ -12,7 +12,7 @@ This work provides a resource of X-linked AD risk loci, candidate genes, and bio
 ---
 
 ## Repository Structure
-
+```
 ├── Analysis_codes/
 │ ├── 01A_GWAMA_master_non-eXCI.R # XWAS Meta-analyses: rXCI, Female, and Male Modeling (GWAMA)
 │ ├── 01B_GWAMA_master_eXCI.R # XWAS Meta-analyses: eXCI Modeling (GWAMA)
@@ -25,6 +25,7 @@ This work provides a resource of X-linked AD risk loci, candidate genes, and bio
 │ └── 05_bulk_DEG.R # VEP enrichment analyses
 └── README.md
 └── LICENSE
+```
 
 ---
 
