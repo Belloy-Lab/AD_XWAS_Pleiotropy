@@ -41,6 +41,18 @@ Meta-analyzed XWAS summary statistics will be made available upon publication in
 - FinnGen: https://www.finngen.fi/en  
 - Million Veteran Program (MVP): https://www.mvp.va.gov/
 
+| Datasource | Link                                          |
+|------------|-----------------------------------------------|
+| dbGaP      | https://www.ncbi.nlm.nih.gov/gap/             |
+| NIAGADS    | https://www.niagads.org/                      |
+| LONI       | https://ida.loni.usc.edu/                     |
+| AMP-AD Knowledge Portal (Synapse) | https://www.synapse.org/ |
+| Rush ADRC  | https://www.radc.rush.edu/                    |
+| NACC       | https://naccdata.org/                         |
+| UK Biobank | https://www.ukbiobank.ac.uk/                  |
+| FinnGen    | https://www.finngen.fi/en                     |
+| Million Veteran Program (MVP)    | https://www.mvp.va.gov/ |
+
 ---
 
 ### Multi-Trait Pleiotropy Analyses
