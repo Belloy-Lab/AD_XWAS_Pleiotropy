@@ -6,7 +6,7 @@ To elucidate sex differences in Alzheimer’s disease (AD), we present the most 
 - Sex-stratified and APOE*4-stratified analyses
 - Modeling of escape from X-chromosome inactivation (eXCI)
 - Multi-trait pleiotropy with brain imaging, lipid, and hormone traits
-- Functional genomics (xQTL colocalization and differential expression)
+- Functional genomics (xQTL colocalization and differential expression)\
 This repository provides codes related to each of these analyses.
 
 ---
