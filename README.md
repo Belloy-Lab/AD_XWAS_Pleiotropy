@@ -77,8 +77,10 @@ Bulk brain RNA-seq datasets used for differential expression analyses are availa
 - AMP-AD Knowledge Portal:  
   https://www.synapse.org/Synapse:syn26720676
 
+---
 
-**Citation:** If you use these scripts, please cite our paper:
+## Citation 
+If you use these scripts, please cite our paper:\
 [insert pre-print/citation once uploaded]
 
 ## Contact
