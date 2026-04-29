@@ -17,12 +17,9 @@ This work provides a resource of X-linked AD risk loci, candidate genes, and bio
 │ ├── 01A_GWAMA_master_non-eXCI.R # XWAS Meta-analyses: rXCI, Female, and Male Modeling (GWAMA)
 │ ├── 01B_GWAMA_master_eXCI.R # XWAS Meta-analyses: eXCI Modeling (GWAMA)
 │ ├── 01C_XWAS_circos_plot.R # XWAS: Circos Plot Creation
-│ ├── 02A_XWAS_trait_pleio_abf.R # Trait Pleiotropy example (abf colocalization)
-│ ├── 02B_XWAS_trait_pleio_susie.R # Trait Pleiotropy example (susie colocalization)
-│ ├── 03_pleio_VEP_enrichment_and_figure.R # VEP enrichment analyses
-│ ├── 04A_XWAS_xQTL_coloc_abf.R # xQTL colocalization (abf)
-│ ├── 04B_XWAS_xQTL_coloc_susie.R # xQTL colocalization (susie)
-│ └── 05_bulk_DEG.R # VEP enrichment analyses
+│ ├── 02A_XWAS_coloc_abf.R # Trait Pleiotropy and xQTL COLOC example script (ABF)
+│ ├── 02B_XWAS_coloc_susie.R # Trait Pleiotropy and xQTL COLOC example script (SuSiE)
+│ └── 03_bulk_DEG.R # Bulk brain tissue DEG analyses
 └── README.md
 └── LICENSE
 ```
