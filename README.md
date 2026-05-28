@@ -80,7 +80,7 @@ Bulk brain RNA-seq datasets used for differential expression analyses are availa
 
 ## Citation 
 If you use these scripts, please cite our paper:\
-[insert pre-print/citation once uploaded]
+(https://doi.org/10.64898/2026.05.05.26352461)
 
 ## Contact
 Noah Cook\
