@@ -17,7 +17,7 @@ D1 <- list(
   position = merged$BP, # SNP basepair position
   N = merged$AD_N, # AD GWAS sample size
   MAF = merged$AD_MAF, # SNP minor allele frequency in AD GWAS
-  s = merged$s # Number of cases / (number of cases + number of controls)
+  s = merged$s[1] # Number of cases / (number of cases + number of controls)
 )
 
 check_dataset(D1)
