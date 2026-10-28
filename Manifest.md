@@ -1,7 +1,6 @@
 # Input/output manifest
 
 Maps each script in `Analyses_codes/` to its required inputs, outputs, and the manuscript figures and tables it supports.
-Draft written against commit `65fa129`.
 
 The repository contains analysis code, not a self-contained end-to-end workflow. Individual-level data are controlled-access, so each script starts from objects or files that must be prepared beforehand. The "Prepared externally" rows below say what those are.
 
