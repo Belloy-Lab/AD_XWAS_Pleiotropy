@@ -27,7 +27,7 @@ male = fread("/path/to/male/summary/stats") %>%
 
 
 ## Merge 4 summary stat files to contain SNP, Chromosome, BP, trait1, .., traiti
-df1 = merge(rxci, aexci, by = "SNP") %>% 
+df1 = merge(rxci, exci, by = "SNP") %>% 
   dplyr::select(SNP, Chromosome.x, Position.x, trait1, trait2) %>% 
   dplyr::rename(Chromosome = Chromosome.x, Position = Position.x)
 
