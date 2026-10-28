@@ -66,4 +66,26 @@ fwrite(gwamad, gwamaf, col.names = F, row.names = F, quote = F, sep = '\t')
 --output "/path/to/output/name_of_GWAMA_output"
 
 
+################################################################################
+# Update GWAMA output to correct format for downstream analyses
+meta = fread("/path/to/output/name_of_GWAMA_output.out")
+
+colnames(meta) <- c("CHR","BP","posID","ALLELE1","ALLELE0","A1FREQ","BETA","SE",
+                    "BETA_95L","BETA_95U","Z","P","P_neg_log10","Q_V","Q_P","i2",
+                    "N_studies","N_incl","META_DIR")
+
+# Add back rsIDs
+meta2 = merge(meta, key, by.x = "posID", by.y = "MARKER") 
+
+# filter to 90% genotype cut-off
+meta90 = meta2 %>% 
+  mutate(DIR1 = substr(META_DIR, 1, 1)) %>% 
+  filter(DIR1 != "?",
+        N_incl > max(N_incl)*0.9) %>% 
+  dplyr::select(-DIR1)
+
+# Write out file
+fwrite(meta90, paste0(out_dir, stats.gen090))
+
+
 
