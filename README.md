@@ -14,13 +14,14 @@ To elucidate sex differences in Alzheimer’s disease (AD), we present the most 
 
 ## Repository Structure
 ```
-├── Analysis_codes/
+├── Analyses_codes/
 │ ├── 01A_GWAMA_master_non-eXCI.R # XWAS Meta-analyses: rXCI, Female, and Male Modeling (GWAMA)
 │ ├── 01B_GWAMA_master_eXCI.R # XWAS Meta-analyses: eXCI Modeling (GWAMA)
 │ ├── 01C_XWAS_circos_plot.R # XWAS: Circos Plot Creation
 │ ├── 02A_XWAS_coloc_abf.R # Trait Pleiotropy and xQTL COLOC example script (ABF)
 │ ├── 02B_XWAS_coloc_susie.R # Trait Pleiotropy and xQTL COLOC example script (SuSiE)
 │ └── 03_bulk_DEG.R # Bulk brain tissue DEG analyses
+└── Manifest.md
 └── README.md
 └── LICENSE
 ```
