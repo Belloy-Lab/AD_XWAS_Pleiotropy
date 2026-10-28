@@ -59,11 +59,14 @@ for (i in 1:num_simulations) {
 ### Calculate Z-score and p-value from z-test
 z = (sample_mean-mean(simulated_means_abs_t))/standard_e
 p = 2*pnorm(-abs(z))
+pm = mean(simulated_means_abs_t_df$mean_abs_t)
+sm = mean(prioritized_genes_df$abs_t)
 
 print(z)
 print(p)
 
-
+# Create a dataframe for null plot
+simulated_means_abs_t_df <- data.frame(mean_abs_t = simulated_means_abs_t)
 
 ######################################################################
 ### Create plots
