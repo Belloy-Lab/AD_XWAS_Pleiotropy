@@ -57,13 +57,14 @@ fwrite(gwamad, gwamaf, col.names = F, row.names = F, quote = F, sep = '\t')
 
 ################################################################################################################################################################
 # Execute this in interactive session command line - Use Docker with GWAMA pre-installed: dmr07083/general-utility:1.0 
+
 #/usr/bin/GWAMA \
---map "/path/to/output/gwama.map.txt" \
---name_marker MARKER \
---indel_alleles \
---random \
---filelist "/path/to/output/gwama_list.txt" \
---output "/path/to/output/name_of_GWAMA_output"
+#--map "/path/to/output/gwama.map.txt" \
+#--name_marker MARKER \
+#--indel_alleles \
+#--random \
+#--filelist "/path/to/output/gwama_list.txt" \
+#--output "/path/to/output/name_of_GWAMA_output"
 
 
 ################################################################################
