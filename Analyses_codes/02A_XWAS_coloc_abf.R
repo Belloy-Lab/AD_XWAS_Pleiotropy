@@ -16,8 +16,8 @@ D1 <- list(
   snp = merged$SNP, # SNP
   position = merged$BP, # SNP basepair position
   N = merged$AD_N, # AD GWAS sample size
-  MAF = merged$AD_MAF, # SNP effect allele frequency in AD GWAS
-  s = merged_c$s # Number of cases / (number of cases + number of controls)
+  MAF = merged$AD_MAF, # SNP minor allele frequency in AD GWAS
+  s = merged$s # Number of cases / (number of cases + number of controls)
 )
 
 check_dataset(D1)
@@ -29,7 +29,7 @@ D2 <- list(
   snp = merged$SNP, # SNP
   position = merged$BP, # SNP basepair position
   N = merged$QTL_N, # QTL data sample size
-  MAF = merged$QTL_MAF # SNP effect allele frequency in QTL data
+  MAF = merged$QTL_MAF # SNP minor allele frequency in QTL data
 )
 
 check_dataset(D2)
