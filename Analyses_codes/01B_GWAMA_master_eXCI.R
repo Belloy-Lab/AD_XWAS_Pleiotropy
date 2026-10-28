@@ -85,7 +85,7 @@ meta90 = meta2 %>%
   dplyr::select(-DIR1)
 
 # Write out file
-fwrite(meta90, paste0(out_dir, stats.gen090))
+fwrite(meta90, paste0(out_dir, 'stats.gen090'))
 
 
 
