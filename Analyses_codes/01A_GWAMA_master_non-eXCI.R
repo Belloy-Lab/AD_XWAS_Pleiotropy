@@ -38,7 +38,7 @@ writeLines(gwamaf, gwaman)
 
 # Execute this in interactive session command line - Use dmr07083/general-utility:1.0 docker
 # Be sure to chanmge directories to match to output directory
-/usr/bin/GWAMA \
+# /usr/bin/GWAMA \
 --map "/path/to/output/directory/gwama.map.txt" \
 --name_marker MARKER \
 --indel_alleles \
