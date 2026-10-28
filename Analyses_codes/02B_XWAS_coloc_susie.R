@@ -10,7 +10,7 @@ library(locuscomparer)
 ## Prepare data for coloc.susie
 
 # AD GWAS coloc.susie preperation
-ADl <- as.list(merged[,c("AD_BETA","varbeta_ad","SNP","BP","AD_EAF")])
+ADl <- as.list(merged[,c("AD_BETA","varbeta_ad","SNP","BP","AD_MAF")])
 names(ADl)[1:5] <- c("beta","varbeta","snp","position","MAF")
 names(ADl$beta) <- ADl$snp
 names(ADl$varbeta) <- ADl$snp
@@ -39,7 +39,7 @@ cc$LD <- cc$LD[ld_index, ld_index]
 
 
 # QTL data coloc.susie preperation
-traitl <- as.list(merged[,c("QTL_BETA","varbeta_t2","SNP","BP","QTL_EAF")])
+traitl <- as.list(merged[,c("QTL_BETA","varbeta_t2","SNP","BP","QTL_MAF")])
 names(traitl)[1:5] <- c("beta","varbeta","snp","position","MAF")
 names(traitl$beta) <- traitl$snp
 names(traitl$varbeta) <- traitl$snp
