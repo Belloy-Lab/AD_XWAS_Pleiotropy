@@ -50,12 +50,12 @@ writeLines(gwamaf, gwaman)
 # Update GWAMA output to correct format for downstream analyses
 meta = fread("/path/to/output/name_of_GWAMA_output.out")
 
-colnames(meta) <- c("CHR","BP","posID","ALLELE1","ALLELE0","A1FREQ","BETA","SE",
+colnames(meta) <- c("CHR","BP","MARKER","ALLELE1","ALLELE0","A1FREQ","BETA","SE",
                     "BETA_95L","BETA_95U","Z","P","P_neg_log10","Q_V","Q_P","i2",
                     "N_studies","N_incl","META_DIR")
 
 # Add back rsIDs
-meta2 = merge(meta, key, by.x = "posID", by.y = "MARKER") 
+meta2 = merge(meta, key, by = "MARKER") 
 
 # filter to 90% genotype cut-off
 meta90 = meta2 %>% 
