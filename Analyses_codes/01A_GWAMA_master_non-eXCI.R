@@ -45,20 +45,27 @@ writeLines(gwamaf, gwaman)
 --filelist "/path/to/output/directory/gwama.merge_list.txt" \
 --output "/path/to/output/name_of_GWAMA_output"
 
-# Update GWAMA output to correct format for downstream analyses and filter to 90% genotype cut-off
+
+################################################################################
+# Update GWAMA output to correct format for downstream analyses
 meta = fread("/path/to/output/name_of_GWAMA_output.out")
 
 colnames(meta) <- c("CHR","BP","posID","ALLELE1","ALLELE0","A1FREQ","BETA","SE",
                     "BETA_95L","BETA_95U","Z","P","P_neg_log10","Q_V","Q_P","i2",
                     "N_studies","N_incl","META_DIR")
 
-meta90 = meta %>% 
+# Add back rsIDs
+meta2 = merge(meta, key, by.x = "posID", by.y = "MARKER") 
+
+# filter to 90% genotype cut-off
+meta90 = meta2 %>% 
   mutate(DIR1 = substr(META_DIR, 1, 1)) %>% 
   filter(DIR1 != "?",
         N_incl > max(N_incl)*0.9) %>% 
   dplyr::select(-DIR1)
 
-fwrite(meta90, paste0(out_dir, ))
+# Write out file
+fwrite(meta90, paste0(out_dir, stats.gen090))
 
 
 
