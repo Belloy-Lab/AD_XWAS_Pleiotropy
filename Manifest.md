@@ -151,7 +151,7 @@ The script keeps X-chromosome rows and one `Comparison` contrast, set through th
 
 **Procedure:** the mean absolute t-statistic of the prioritized genes is compared with 100,000 permutations (seed 20261103) of as many X genes drawn from the non-prioritized X genes, under two backgrounds: non-matched (random genes) and matched on average expression (`AveExpr`). One-sided empirical P = (1 + number of permuted means >= observed) / (permutations + 1).
 **Outputs:** printed `p_unmatched` and `p_matched`; histogram of the non-matched null and violin plot, combined with patchwork (not saved to file by the script).
-**Supports:** Fig 5B (non-matched background; one panel per brain region, eight in total) and the DEG enrichment supplementary table (both backgrounds). Only the ACC enrichment is nominally significant (P = 0.015 non-matched, P = 0.034 matched).
+**Supports:** Fig 5B (non-matched background; one panel per brain region, eight in total) and the DEG enrichment supplementary table (both backgrounds). 
 
 ## External data and software releases
 
