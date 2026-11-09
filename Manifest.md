@@ -145,13 +145,13 @@ Tests whether the prioritized X-linked genes show larger absolute differential-e
 | File | Columns used |
 |---|---|
 | `gene_reference.csv` | `gene_name`, `ens_id`. This is the list of prioritized genes. |
-| `DEG_results.csv` | `chromosome_name`, `hgnc_symbol`, `ensembl_gene_id`, `Comparison`, `t`. AMP-AD DEG results (Synapse syn26720676). |
+| `DEG_results.csv` | `chromosome_name`, `hgnc_symbol`, `ensembl_gene_id`, `Comparison`, `t`, `AveExpr`. AMP-AD DEG results (Synapse syn26720676). |
 
-The script keeps X-chromosome rows and one `Comparison` contrast. The contrast written in the script, `diagnosis_tissue*age_death.AD_CBE - diagnosis_tissue*age_death.CT_CBE`, is an example from the cerebellum (CBE). The same script was applied to each of the eight brain regions by changing the `Comparison` string to that region's AD-versus-control contrast.
+The script keeps X-chromosome rows and one `Comparison` contrast, set through the `region` variable (default `ACC`). The same script was applied to each of the eight brain regions by changing `region` to that region's AD-versus-control contrast.
 
-**Procedure:** 1,000 random draws (seed 123) of as many X genes as were prioritized, then a Z-test of the prioritized mean against the simulated mean.
-**Outputs:** printed `z` and `p`; histogram of the null and violin plot, combined with patchwork (not saved to file by the script).
-**Supports:** Fig 5B, which has one panel per brain region (eight in total); only the ACC enrichment is significant (P = 0.03).
+**Procedure:** the mean absolute t-statistic of the prioritized genes is compared with 100,000 permutations (seed 20261103) of as many X genes drawn from the non-prioritized X genes, under two backgrounds: non-matched (random genes) and matched on average expression (`AveExpr`). One-sided empirical P = (1 + number of permuted means >= observed) / (permutations + 1).
+**Outputs:** printed `p_unmatched` and `p_matched`; histogram of the non-matched null and violin plot, combined with patchwork (not saved to file by the script).
+**Supports:** Fig 5B (non-matched background; one panel per brain region, eight in total) and the DEG enrichment supplementary table (both backgrounds). Only the ACC enrichment is nominally significant (P = 0.015 non-matched, P = 0.034 matched).
 
 ## External data and software releases
 
